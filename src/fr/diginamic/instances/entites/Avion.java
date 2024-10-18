@@ -6,10 +6,11 @@ public class Avion {
     String modele;
     Pilote pilote;
     Passager  passager;
+
     Avion(String marque, String modele, Pilote pilote, Passager passager ){
-        marque = marque;
-        modele = modele;
-        pilote = pilote;
-        passager = passager;
+        this.marque = marque;
+        this.modele = modele;
+        this.pilote = pilote;
+        this.passager = passager;
     }
 }

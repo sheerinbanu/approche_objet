@@ -6,8 +6,8 @@ public class Passager {
     int numeroSiège;
 
     Passager(String nom, String prenom, int num){
-        nom =  nom;
-        prenom = prenom;
-        numeroSiège = num;
+        this.nom =  nom;
+        this.prenom = prenom;
+        this.numeroSiège = num;
     }
 }

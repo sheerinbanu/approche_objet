@@ -8,8 +8,8 @@ public class Pilote {
     String dateDeLicence;
 
     Pilote(String n, String p, String d){
-        nom = n;
-        prenom = p;
-        dateDeLicence = d;
+        this.nom = n;
+        this.prenom = p;
+        this.dateDeLicence = d;
     }
 }
