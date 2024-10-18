@@ -7,7 +7,7 @@ public class Pilote {
     private String prenom;
     private String dateDeLicence;
 
-    Pilote(String nom, String prenom, String date){
+    public Pilote(String nom, String prenom, String date){
         this.nom = nom;
         this.prenom = prenom;
         this.dateDeLicence = date;

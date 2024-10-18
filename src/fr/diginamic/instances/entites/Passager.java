@@ -7,7 +7,7 @@ public class Passager extends ArrayList<Passager> {
     private String prenom;
     private int numeroSiège;
 
-    Passager(String nom, String prenom, int numero){
+    public Passager(String nom, String prenom, int numero){
         this.nom =  nom;
         this.prenom = prenom;
         this.numeroSiège = numero;
@@ -39,6 +39,6 @@ public class Passager extends ArrayList<Passager> {
 
     @Override
     public String toString(){
-        return "Passager{" + "nom = " +nom+ "Prenom = " + prenom + " numero siège = " + numeroSiège+ '}';
+        return "Passager{" + "nom = " +nom+ "Prenom = " + prenom + " numero siège = " + numeroSiège+ "}";
     }
 }

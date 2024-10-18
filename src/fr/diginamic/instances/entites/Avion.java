@@ -3,16 +3,17 @@ package fr.diginamic.instances.entites;
 import java.util.ArrayList;
 
 public class Avion {
-    long immatriculation;
+    int immatriculation;
     private String marque;
     private String modele;
     private Pilote pilote;
     private ArrayList<Passager> passager;
 
-    Avion(String marque, String modele, Pilote pilote, ArrayList<Passager> passager ){
+    public Avion(String marque, String modele, int imma, Pilote pilote, ArrayList<Passager> passager){
         this.marque = marque;
         this.modele = modele;
         this.pilote = pilote;
+        this.immatriculation = imma;
         this.passager = new ArrayList<>();
     }
     Avion(String marque, String modele, Pilote pilote ){
@@ -21,11 +22,12 @@ public class Avion {
         this.pilote = pilote;
     }
 
+
     public long getImmatriculation() {
         return immatriculation;
     }
 
-    public void setImmatriculation(long immatriculation) {
+    public void setImmatriculation(int immatriculation) {
         this.immatriculation = immatriculation;
     }
 
