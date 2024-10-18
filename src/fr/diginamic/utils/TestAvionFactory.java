@@ -18,6 +18,7 @@ public class TestAvionFactory {
 
         avion1.attributAvion();
         avion2.attributAvion();
-        AvionFactory.transfert(avion1, avion2);
+        Avion avion3 = AvionFactory.transfert(avion1, avion2);
+
     }
 }
