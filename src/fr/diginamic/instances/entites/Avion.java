@@ -60,8 +60,6 @@ public class Avion {
         this.passager = passager;
     }
 
-
-
     public void attributAvion(){
         System.out.println("Immatriculation de l'avion" + immatriculation);
         System.out.println("La marque de l'avion est " + marque);

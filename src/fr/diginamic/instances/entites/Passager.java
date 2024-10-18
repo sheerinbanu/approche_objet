@@ -36,4 +36,9 @@ public class Passager extends ArrayList<Passager> {
     public void setNumeroSiège(int numeroSiège) {
         this.numeroSiège = numeroSiège;
     }
+
+    @Override
+    public String toString(){
+        return "Passager{" + "nom = " +nom+ "Prenom = " + prenom + " numero siège = " + numeroSiège+ '}';
+    }
 }
