@@ -1,6 +1,8 @@
 package fr.diginamic.instances.entites;
 
-public class Passager {
+import java.util.ArrayList;
+
+public class Passager extends ArrayList<Passager> {
     private String nom;
     private String prenom;
     private int numeroSiège;
