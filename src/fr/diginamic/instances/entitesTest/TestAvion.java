@@ -13,7 +13,6 @@ public class TestAvion {
         passager2[0] = new Passager("Helen", "Roz", 12);
         passager2[1] = new Passager("Meena", "Kumari", 10);
 
-
         Avion avion1 = new Avion(23456, "Airbus", "Boeing767", pilote1, passagers1);
         Avion avion2 = new Avion(9460, "Airbus", "New", pilote2, passager2);
 
