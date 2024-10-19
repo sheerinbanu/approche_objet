@@ -19,6 +19,11 @@ public class TestAvion {
 
         System.out.println("Avion1 " + avion1);
         System.out.println("Avion2 "+ avion2);
+
+        Avion avion3 = new Avion(8889, "SpiceJet", "DreamLine", pilote2, passager2);
+        avion3.attributAvion();
+        Passager nouveauPassager = new Passager("Micheal", "Kor", 16);
+        avion3.ajouterPassager(passager2,nouveauPassager);
     }
 
 }

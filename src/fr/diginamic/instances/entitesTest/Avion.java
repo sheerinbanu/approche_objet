@@ -7,8 +7,8 @@ public class Avion {
     private String marque;
     private String modele;
     private Pilote pilote;
-    private Passager [] passagers;
-    private int AvionCapacite;
+    private Passager[] passagers;
+    private int avionCapacite;
 
     public Avion(long immatriculation, String marque, String modele, Pilote pilote, Passager[] passagers) {
         this.immatriculation = immatriculation;
@@ -59,11 +59,11 @@ public class Avion {
     }
 
     public int getAvionCapacite() {
-        return AvionCapacite;
+        return avionCapacite;
     }
 
     public void setAvionCapacite(int avionCapacite) {
-        AvionCapacite = avionCapacite;
+        avionCapacite = avionCapacite;
     }
 
     @Override
@@ -75,5 +75,31 @@ public class Avion {
                 ", pilote=" + pilote +
                 ", passagers=" + Arrays.toString(passagers) +
                 '}';
+    }
+
+    public void attributAvion() {
+        System.out.println("Immatriculation de l'avion est " + immatriculation);
+        System.out.println("Marque de l'avion  " + marque);
+        System.out.println("Modèle de l'avion  " + modele);
+        System.out.println("Le pilote de l'avion  " + pilote);
+        System.out.println("Passagers de l'avion  " + Arrays.toString(passagers));
+        System.out.println("Capacité de l'avion " + 20);
+    }
+
+    public Passager[] ajouterPassager(Passager[] passagers, Passager nouveauPassager) {
+        Passager[] nouveauTabPassager = Arrays.copyOf(passagers, passagers.length + 1);
+        avionCapacite = 20;
+        if (passagers.length < avionCapacite) {
+            nouveauTabPassager[nouveauTabPassager.length - 1] = nouveauPassager;
+        } else {
+            System.out.println("Désolé, l'avion est plein!");
+        }
+        System.out.println("Passager ajouté! Voici la nouvelle liste de passagers!");
+        for (Passager p:nouveauTabPassager){
+            System.out.println(p);
+        }
+
+        return nouveauTabPassager;
+
     }
 }
