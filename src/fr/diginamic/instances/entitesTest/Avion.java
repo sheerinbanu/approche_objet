@@ -10,12 +10,13 @@ public class Avion {
     private Passager[] passagers;
     private int avionCapacite;
 
-    public Avion(long immatriculation, String marque, String modele, Pilote pilote, Passager[] passagers) {
+    public Avion(long immatriculation, String marque, String modele, Pilote pilote, Passager[] passagers, int avionCapacite) {
         this.immatriculation = immatriculation;
         this.marque = marque;
         this.modele = modele;
         this.pilote = pilote;
         this.passagers = passagers;
+        this.avionCapacite = avionCapacite;
     }
 
     public long getImmatriculation() {
@@ -53,6 +54,12 @@ public class Avion {
     public Passager[] getPassagers() {
         return passagers;
     }
+    public Passager getPassager(int index) {
+        if (index >= 0 && index < passagers.length) {
+            return passagers[index];
+        } return null;
+
+    }
 
     public void setPassagers(Passager[] passagers) {
         this.passagers = passagers;
@@ -83,7 +90,7 @@ public class Avion {
         System.out.println("Modèle de l'avion  " + modele);
         System.out.println("Le pilote de l'avion  " + pilote);
         System.out.println("Passagers de l'avion  " + Arrays.toString(passagers));
-        System.out.println("Capacité de l'avion " + 20);
+        System.out.println("Capacité de l'avion " + avionCapacite);
     }
 
     public Passager[] ajouterPassager(Passager[] passagers, Passager nouveauPassager) {
@@ -101,5 +108,13 @@ public class Avion {
 
         return nouveauTabPassager;
 
+    }
+
+    public void afficherPassager(){
+        System.out.println("Liste des passagers dans l'avion");
+        for(Passager p: passagers)
+            if(p!=null) {
+                System.out.println(p);
+            }
     }
 }

@@ -1,24 +1,15 @@
 package fr.diginamic.utils;
 
-import fr.diginamic.instances.entites.Avion;
-import fr.diginamic.instances.entites.Passager;
-import fr.diginamic.instances.entites.Pilote;
+
+import fr.diginamic.instances.entitesTest.Passager;
+import fr.diginamic.instances.entitesTest.Pilote;
 
 public class TestAvionFactory {
     public static void main(String[] args) {
-        Passager passager1 = new Passager("Lo", "TOU", 15);
-        Passager passager2 = new Passager("Lea", "Saumon", 45);
-
-
-        Pilote pilote1 = new Pilote("Jean", "Richard", "11/09/24");
-        Pilote pilote2 = new Pilote("Sheerin", "Banu", "10/10/24");
-
-        Avion avion1 = AvionFactory.getInstance("Boeing", "737", 345, pilote1, passager1);
-        Avion avion2 = AvionFactory.getInstance("Boeing", "737", 345, pilote2, passager2);
-
-        avion1.attributAvion();
-        avion2.attributAvion();
-        Avion avion3 = AvionFactory.transfert(avion1, avion2);
-
+        Pilote pilote1 = new Pilote("Lou", "Romain", "23/09/09");
+        Passager[] passagers1 = new Passager[2];
+        passagers1[0] = new Passager("Dupont", "Jean", 12);
+        passagers1[1] = new Passager("Martin", "Sophie", 21);
+        AvionFactory.getInstance(7654,"Airbus", "BOEIG 555", pilote1, passagers1, 10);
     }
 }
