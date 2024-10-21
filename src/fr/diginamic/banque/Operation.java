@@ -26,10 +26,7 @@ public abstract class Operation {
     }
     @Override
     public String toString() {
-        return "Operation{" +
-                "dateOperation='" + dateOperation + '\'' +
-                ", montantOperation=" + montantOperation +
-                '}';
+        return getType() + " : "+ dateOperation+" "+montantOperation;
     }
 
     public abstract String getType();

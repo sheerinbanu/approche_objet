@@ -2,6 +2,7 @@ package fr.diginamic.banque;
 
 public class TestOperation {
     public static void main(String[] args) {
+
         Operation[] operations = new Operation[4];
         operations[0] = new Credit("21/10/24", 22.9);
         operations[1] = new Debit("12/09/20", 200.7);
