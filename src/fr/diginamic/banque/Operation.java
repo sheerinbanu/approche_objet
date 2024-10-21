@@ -24,4 +24,14 @@ public abstract class Operation {
     public void setMontantOperation(double montantOperation) {
         this.montantOperation = montantOperation;
     }
+
+    @Override
+    public String toString() {
+        return "Operation{" +
+                "dateOperation='" + dateOperation + '\'' +
+                ", montantOperation=" + montantOperation +
+                '}';
+    }
+
+    public abstract String getType();
 }
