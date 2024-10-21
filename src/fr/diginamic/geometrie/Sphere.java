@@ -1,6 +1,7 @@
 package fr.diginamic.geometrie;
 
-import java.text.DecimalFormat;
+import static java.lang.Math.PI;
+import static java.lang.Math.pow;
 
 public class Sphere implements Objet3D{
 
@@ -10,11 +11,9 @@ public class Sphere implements Objet3D{
         this.rayon = rayon;
     }
 
-
-
     @Override
     public double volume() {
-        double volume = (4.0/3.0)*Math.PI*Math.pow(rayon,3);
+        double volume = (4.0/3.0)*PI*pow(rayon,3.0);
         return Math.round(volume * 100.0) / 100.0;
     }
 
@@ -25,7 +24,7 @@ public class Sphere implements Objet3D{
 
     @Override
     public double surface() {
-        return 4*Math.PI*Math.pow(rayon, 2);
+        return 4*PI*pow(rayon, 2);
     }
 
     public double getRayon() {

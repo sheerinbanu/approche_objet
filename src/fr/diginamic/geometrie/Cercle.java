@@ -20,10 +20,6 @@ public class Cercle implements ObjetGeometrique{
         return rayon;
     }
 
-    public void setRayon(double rayon) {
-        this.rayon = rayon;
-    }
-
     @Override
     public String toString() {
         return "Cercle{" +

@@ -1,20 +1,18 @@
 package fr.diginamic.geometrie;
 
 public class Rectangle implements ObjetGeometrique{
-    protected int longueur;
-    protected int largeur;
+    protected double longueur;
+    protected double largeur;
 
-    public Rectangle(int longueur, int largeur) {
+    public Rectangle(double longueur, double largeur) {
         this.longueur = longueur;
         this.largeur = largeur;
     }
-    public Rectangle(){
 
-    }
 
     @Override
     public double perimetre() {
-        return 2*(longueur+largeur);
+        return 2.0*(longueur+largeur);
     }
 
     @Override
@@ -22,7 +20,7 @@ public class Rectangle implements ObjetGeometrique{
         return longueur*largeur;
     }
 
-    public int getLongueur() {
+    public double getLongueur() {
         return longueur;
     }
 
@@ -30,7 +28,7 @@ public class Rectangle implements ObjetGeometrique{
         this.longueur = longueur;
     }
 
-    public int getLargeur() {
+    public double getLargeur() {
         return largeur;
     }
 
