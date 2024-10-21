@@ -32,11 +32,8 @@ public class AvionFactory {
     private static Passager[] fusionPassagers(Passager[] passagersPlus, Passager[] passagersMoins) {
 
         Passager[] tousLesPassagers = new Passager[passagersPlus.length + passagersMoins.length];
-
         System.arraycopy(passagersPlus, 0, tousLesPassagers, 0, passagersPlus.length);
-
         System.arraycopy(passagersMoins, 0, tousLesPassagers, passagersPlus.length, passagersMoins.length);
-
         return tousLesPassagers;
     }
 

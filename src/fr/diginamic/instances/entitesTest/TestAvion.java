@@ -11,7 +11,6 @@ public class TestAvion {
         passagers1[0] = new Passager("Dupont", "Jean", 12);
         passagers1[1] = new Passager("Martin", "Sophie", 21);
 
-
         Passager[] passager2 = new Passager[2];
         passager2[0] = new Passager("Helen", "Roz", 12);
         passager2[1] = new Passager("Meena", "Kumari", 10);
