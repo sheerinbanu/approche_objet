@@ -13,7 +13,6 @@ public class TestOperation {
         }
         double sommeMontOpCredit = 0.0;
         double sommeMontOpdebit = 0.0;
-
         for (Operation op : operations) {
             String type1 = op.getType();
             double montOp = op.getMontantOperation();

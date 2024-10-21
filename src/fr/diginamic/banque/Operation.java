@@ -24,7 +24,6 @@ public abstract class Operation {
     public void setMontantOperation(double montantOperation) {
         this.montantOperation = montantOperation;
     }
-
     @Override
     public String toString() {
         return "Operation{" +
