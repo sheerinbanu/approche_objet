@@ -12,17 +12,17 @@ public class TestOperation {
             System.out.println(op.getType() + ":  " + op);
         }
         double sommeMontOpCredit = 0.0;
-        double sommeMontOpdebit = 0.0;
+        double sommeMontOpDebit = 0.0;
         for (Operation op : operations) {
             String type1 = op.getType();
             double montOp = op.getMontantOperation();
             if (type1.equals("CREDIT")) {
                 sommeMontOpCredit += montOp;
             }else {
-                sommeMontOpdebit+= montOp;
+                sommeMontOpDebit+= montOp;
             }
         }
         System.out.println("Total des crédits = " + sommeMontOpCredit);
-        System.out.println("Total des débits = " + sommeMontOpdebit);
+        System.out.println("Total des débits = " + sommeMontOpDebit);
     }
 }
