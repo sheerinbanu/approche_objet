@@ -12,7 +12,6 @@ public class CompteTaux extends Compte{
     public double getTauxDeRemuneration() {
         return tauxDeRemuneration;
     }
-
     public void setTauxDeRemuneration(double tauxDeRemuneration) {
         this.tauxDeRemuneration = tauxDeRemuneration;
     }
