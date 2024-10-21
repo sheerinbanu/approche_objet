@@ -8,7 +8,6 @@ public class CompteTaux extends Compte{
         super(numeroCompte, solde);
         this.tauxDeRemuneration = tauxDeRemuneration;
     }
-
     public double getTauxDeRemuneration() {
         return tauxDeRemuneration;
     }
