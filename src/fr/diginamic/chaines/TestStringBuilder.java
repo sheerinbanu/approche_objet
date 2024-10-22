@@ -7,7 +7,7 @@ public class TestStringBuilder {
         for (int i = 0; i <=100000; i++) {
             s.append(i);
         }
-        System.out.println(s.toString());
+     //   System.out.println(s.toString());
         long fin = System.currentTimeMillis();
         System.out.println("Temps écoulé en millisecondes : " + (fin-debut));
 
@@ -16,7 +16,7 @@ public class TestStringBuilder {
         for (int i = 0; i <=100000; i++) {
             s2+=i;
         }
-        System.out.println(s2.toString());
+   //     System.out.println(s2.toString());
         long fin2 = System.currentTimeMillis();
         System.out.println("Temps écoulé en millisecondes : " + (fin2-debut2));
     }
