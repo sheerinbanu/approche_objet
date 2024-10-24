@@ -1,6 +1,6 @@
 package fr.diginamic.listes;
-
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 
 public class TestVilles {
@@ -22,6 +22,10 @@ public class TestVilles {
         villes.add(v5);
         villes.add(v6);
         villes.add(v7);
+
+        ////////Comparaison par ordre alphabétique//////////////
+        Collections.sort((villes));
+        System.out.println("Tri par ordre alphabétique" + villes);
 
        long max = villes.get(0).getNbHab();
         for (int i = 0; i < villes.size(); i++) {
@@ -45,6 +49,8 @@ public class TestVilles {
             }
         }
         System.out.println(min);
+        villes.remove(min);
+        System.out.println(villes.size());
 
         Iterator<Ville> iterator = villes.iterator();
         while (iterator.hasNext()){
@@ -61,7 +67,7 @@ public class TestVilles {
         for (int i = 0; i < villes.size() ; i++) {
             if(villes.get(i).getNbHab()>100000){
 
-                    villes.get(i).setNom(villes.get(i).getNom().toUpperCase());
+             villes.get(i).setNom(villes.get(i).getNom().toUpperCase());
             }
         }
          System.out.println(villes);

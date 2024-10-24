@@ -1,6 +1,9 @@
 package fr.diginamic.listes;
 
-public class Ville {
+import java.util.Comparator;
+import java.util.Objects;
+
+public class Ville implements Comparable<Ville> {
 
     private String nom;
     private long nbHab;
@@ -26,6 +29,19 @@ public class Ville {
         this.nbHab = nbHab;
     }
 
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Ville ville)) return false;
+        return nbHab == ville.nbHab && Objects.equals(nom, ville.nom);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nom, nbHab);
+    }
+
     @Override
     public String toString() {
         return "Ville{" +
@@ -35,4 +51,9 @@ public class Ville {
     }
 
 
+    @Override
+    public int compareTo(Ville v) {
+        return this.nom.compareTo(v.getNom());
+
+    }
 }
