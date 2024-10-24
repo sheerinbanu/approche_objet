@@ -27,10 +27,20 @@ public class TestVilles {
  /*       Collections.sort((villes));
         System.out.println("Tri par ordre alphabétique" + villes);
 */
-        //////////////Comparaison par nombre habitants/////
+     /*   //////////////Comparaison par nombre habitants/////
         Collections.sort(villes);
         System.out.println("Tri par nb d'habitants" + villes);
+*/
+        ///////////////Comparaison par ordre décroissant
 
+        ArrayList<Ville> villesTrier = new ArrayList<>();
+        for(Ville v: villes){
+            if(v.getNbHab()>25000){
+                villesTrier.add(v);
+            }
+        }
+        Collections.sort(villes);
+        System.out.println("Tri par ordre décroissant du nom de villes :" + villes);
 
        long max = villes.get(0).getNbHab();
         for (int i = 0; i < villes.size(); i++) {
