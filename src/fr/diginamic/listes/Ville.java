@@ -3,7 +3,7 @@ package fr.diginamic.listes;
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Ville implements Comparable<Ville> {
+public class Ville  {
 
     private String nom;
     private long nbHab;
@@ -51,18 +51,18 @@ public class Ville implements Comparable<Ville> {
     }
 
 
-    @Override
-    public int compareTo(Ville v) {
-
-        return v.getNom().compareTo((this.nom));
-       // return this.nom.compareTo(v.getNom());
-     /*   if(this.nbHab>v.getNbHab()){
-            return -1;
-        } else if (this.nbHab<v.getNbHab()) {
-            return 1;
-        } else  {
-            return 0;
-        }*/
-
-    }
+//    @Override
+//    public int compareTo(Ville v) {
+//
+//        return v.getNom().compareTo((this.nom));
+//       // return this.nom.compareTo(v.getNom());
+//     /*   if(this.nbHab>v.getNbHab()){
+//            return -1;
+//        } else if (this.nbHab<v.getNbHab()) {
+//            return 1;
+//        } else  {
+//            return 0;
+//        }*/
+//
+//    }
 }

@@ -23,6 +23,12 @@ public class TestVilles {
         villes.add(v6);
         villes.add(v7);
 
+        Collections.sort(villes, new ComparatorNom());
+        System.out.println("Comparator par nom" + villes);
+
+        Collections.sort(villes, new ComparatorHabitant());
+        System.out.println("Comparator par nbHabitants " + villes);
+
         ////////Comparaison par ordre alphabétique//////////////
  /*       Collections.sort((villes));
         System.out.println("Tri par ordre alphabétique" + villes);
@@ -33,7 +39,7 @@ public class TestVilles {
 */
         ///////////////Comparaison par ordre décroissant
 
-        ArrayList<Ville> villesTrier = new ArrayList<>();
+/*        ArrayList<Ville> villesTrier = new ArrayList<>();
         for(Ville v: villes){
             if(v.getNbHab()>25000){
                 villesTrier.add(v);
@@ -41,7 +47,7 @@ public class TestVilles {
         }
         Collections.sort(villes);
         System.out.println("Tri par ordre décroissant du nom de villes :" + villes);
-
+*/
        long max = villes.get(0).getNbHab();
         for (int i = 0; i < villes.size(); i++) {
             if(villes.get(i).getNbHab()>max){
