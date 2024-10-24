@@ -55,14 +55,14 @@ public class Ville  {
 //    public int compareTo(Ville v) {
 //
 //        return v.getNom().compareTo((this.nom));
-//       // return this.nom.compareTo(v.getNom());
-//     /*   if(this.nbHab>v.getNbHab()){
+//       return this.nom.compareTo(v.getNom());
+//       if(this.nbHab>v.getNbHab()){
 //            return -1;
 //        } else if (this.nbHab<v.getNbHab()) {
 //            return 1;
 //        } else  {
 //            return 0;
-//        }*/
+//        }
 //
 //    }
 }
