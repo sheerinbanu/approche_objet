@@ -24,8 +24,13 @@ public class TestVilles {
         villes.add(v7);
 
         ////////Comparaison par ordre alphabétique//////////////
-        Collections.sort((villes));
+ /*       Collections.sort((villes));
         System.out.println("Tri par ordre alphabétique" + villes);
+*/
+        //////////////Comparaison par nombre habitants/////
+        Collections.sort(villes);
+        System.out.println("Tri par nb d'habitants" + villes);
+
 
        long max = villes.get(0).getNbHab();
         for (int i = 0; i < villes.size(); i++) {

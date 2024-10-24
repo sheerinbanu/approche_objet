@@ -53,7 +53,14 @@ public class Ville implements Comparable<Ville> {
 
     @Override
     public int compareTo(Ville v) {
-        return this.nom.compareTo(v.getNom());
+      //  return this.nom.compareTo(v.getNom());
+        if(this.nbHab>v.getNbHab()){
+            return 1;
+        } else if (this.nbHab<v.getNbHab()) {
+            return -1;
+        } else  {
+            return 0;
+        }
 
     }
 }
