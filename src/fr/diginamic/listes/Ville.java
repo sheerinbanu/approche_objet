@@ -1,16 +1,28 @@
 package fr.diginamic.listes;
 
-import java.util.Comparator;
+
+import fr.diginamic.testenumeration.Continent;
+
 import java.util.Objects;
 
 public class Ville  {
 
     private String nom;
     private long nbHab;
+    private Continent continent;
 
-    public Ville(String nom, long nbHab) {
+    public Ville(String nom, long nbHab, Continent continent) {
         this.nom = nom;
         this.nbHab = nbHab;
+        this.continent = continent;
+    }
+
+    public Continent getContinent() {
+        return continent;
+    }
+
+    public void setContinent(Continent continent) {
+        this.continent = continent;
     }
 
     public String getNom() {
@@ -29,8 +41,6 @@ public class Ville  {
         this.nbHab = nbHab;
     }
 
-
-
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof Ville ville)) return false;
@@ -47,9 +57,9 @@ public class Ville  {
         return "Ville{" +
                 "nom='" + nom + '\'' +
                 ", nbHab=" + nbHab +
+                ", continent=" + continent +
                 '}';
     }
-
 
 //    @Override
 //    public int compareTo(Ville v) {

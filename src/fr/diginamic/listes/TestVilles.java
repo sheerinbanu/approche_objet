@@ -1,5 +1,7 @@
 package fr.diginamic.listes;
 
+import fr.diginamic.testenumeration.Continent;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -7,13 +9,13 @@ import java.util.Iterator;
 public class TestVilles {
     public static void main(String[] args) {
 
-        Ville v1 = new Ville("Nice", 343000);
-        Ville v2 = new Ville("Carcassonne", 47800);
-        Ville v3 = new Ville("Narbonne", 484000);
-        Ville v4 = new Ville("Foix", 9700);
-        Ville v5 = new Ville("Pau", 77200);
-        Ville v6 = new Ville("Marseille", 850700);
-        Ville v7 = new Ville("Tarbes", 40600);
+        Ville v1 = new Ville("Nice", 343000, Continent.EUROPE);
+        Ville v2 = new Ville("Carcassonne", 47800, Continent.EUROPE);
+        Ville v3 = new Ville("Narbonne", 484000, Continent.EUROPE);
+        Ville v4 = new Ville("Foix", 9700, Continent.EUROPE);
+        Ville v5 = new Ville("Pau", 77200, Continent.EUROPE);
+        Ville v6 = new Ville("Marseille", 850700, Continent.EUROPE);
+        Ville v7 = new Ville("Tarbes", 40600, Continent.EUROPE);
 
         ArrayList<Ville> villes = new ArrayList<>();
         villes.add(v1);
